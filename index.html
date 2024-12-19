@@ -1,148 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Plan</title>
+    <title>Happy Homes - Real Estate and Junk Hauling Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
         }
-        .tabs {
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
             display: flex;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f1f1f1;
+            justify-content: center;
+            background: #333;
+            color: white;
         }
-        .tab {
-            padding: 10px;
-            margin-right: 10px;
-            background-color: #ddd;
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        nav a:hover {
+            background: #4CAF50;
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: white;
+        }
+        .cta {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta a {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
             border-radius: 5px;
         }
-        .tab:hover {
-            background-color: #ccc;
-        }
-        .tab-content {
-            display: none;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-top: none;
-        }
-        .tab-content.active {
-            display: block;
+        .cta a:hover {
+            background: #333;
         }
     </style>
 </head>
 <body>
-    <h1><a href="https://www.linkedin.com/in/mikesoreljr/">Mike Sorel, Jr.</a></h1>
-    <div class="tabs">
-        <div class="tab" onclick="showTab('executive-summary')">Executive Summary</div>
-        <div class="tab" onclick="showTab('company-description')">Company Description</div>
-        <div class="tab" onclick="showTab('market-analysis')">Market Analysis</div>
-        <div class="tab" onclick="showTab('organization-management')">Organization & Management</div>
-        <div class="tab" onclick="showTab('service-product-line')">Service or Product Line</div>
-        <div class="tab" onclick="showTab('marketing-sales')">Marketing & Sales</div>
-        <div class="tab" onclick="showTab('funding-request')">Funding Request</div>
-        <div class="tab" onclick="showTab('financial-projections')">Financial Projections</div>
-        <div class="tab" onclick="showTab('appendix')">Appendix</div>
-    </div>
-
-    <div id="executive-summary" class="tab-content">
-        <h2>Executive Summary</h2>
-        <ul>
-            <li><strong>Mission Statement:</strong> I research & develop technology to better solve business problems.  My goals are to educate and entertain on my process and attract large companies to license my designs to.</li>
-            <li><strong>Company Information:</strong> "All About Business" Business Vlogger does Odd Jobs & Provides Insight.  Identify Innovations, Sanford, FL.  Offering Research & Product Development Services and Reports, Speaking & Books.</li>
-            <li><strong>Business Highlights:</strong> Using the internet & reality to solve business problems via real world experience.</li>
-            <li><strong>Financial Summary:</strong> Attract millions of youtube followers & sell high ticket R&D consulting.</li>
-            <li><strong>Future Plans:</strong> Get operating funds so I can work on my designs.  Empower me so I can entertain on youtube.  Explore the world of innovation by recording how I go through the world looking to improve tools & equipment.</li>
-        </ul>
-    </div>
-    <div id="company-description" class="tab-content">
-        <h2>Company Description</h2>
-        <ul>
-            <li><strong>Business Overview:</strong> Murdoch (A-Team) like man of many diverse skills. We go around and look for problems business face, and use innovation & technology to improve the experience & results of workers & consumers.</li>
-            <li><strong>Company History:</strong> Mike Sorel, Jr. was always fascinated with tools, equipment, machinery.  There is something so pure and simple when a simple tool fulfills it's purpose and makes life better.</li>
-            <li><strong>Mission and Vision Statements:</strong> Versatility.  Hope.  Persistence.  Determination.  Resourcefulness.  We want to add value to the forefront of design & technology.</li>
-            <li><strong>Business Structure:</strong> LLC.</li>
-            <li><strong>Location:</strong> Sanford, Florida.</li>
-        </ul>
-    </div>
-    <div id="market-analysis" class="tab-content">
-        <h2>Market Analysis</h2>
-        <ul>
-            <li><strong>Industry Overview:</strong> We operate in the research & development consulting sphere.  We study and use products and tools, and search for better ways to solve problems to improve business efficiency, effectiveness & elegance.</li>
-            <li><strong>Target Market:</strong> Large American Companies, Mass Market Audience.</li>
-            <li><strong>Market Needs:</strong> We help companies learn better ways to pay attention to higher states of business operations.</li>
-            <li><strong>Market Trends:</strong> Solving problems with technology really excites a certain type of individual.  Promoting a positive "can do" attitude and solving problems in honest ways is the backbone of my modus operandi.</li>
-            <li><strong>Competitive Analysis:</strong> Mike Rowe Dirty Jobs, following a guy that is documenting real world experience on jobsites.  
-            Colin Furze - he is well funded, it seems mostly like a show not a real needle moving inventor.</li>
-        </ul>
-    </div>
-    <div id="organization-management" class="tab-content">
-        <h2>Organization & Management</h2>
-        <ul>
-            <li><strong>Organizational Structure:</strong> Mike Sorel, Jr. - Owner.  Guest C.E.O's. my clients get to send me on missions.</li>
-            <li><strong>Ownership Information:</strong> Mike Sorel, Jr. 100% ownership.  The Guest C.E.O's can gather information and other deals..</li>
-            <li><strong>Management Team:</strong> Guest C.E.O.'s my clients, MBA high level grads who want to be featured on my show.'.</li>
-            <li><strong>Advisors:</strong> Documentary style communication, like MTV's Real World.</li>
-        </ul>
-    </div>
-    <div id="service-product-line" class="tab-content">
-        <h2>Service or Product Line</h2>
-        <ul>
-            <li><strong>Product/Service Description:</strong> Business Vlogger.  I sell books, I make videos, I do jobs.  I analyze business models, products & services.</li>
-            <li><strong>Unique Selling Proposition (USP):</strong> Obsessed with business & technology, follow a vlogger about how he runs his business.</li>
-            <li><strong>Product Lifecycle:</strong> I have C.E.O.'s send me on missions.  I go deep and long I'm a professional consultative vlogger.</li>
-            <li><strong>Research and Development (R&D):</strong> I dive deep into my guest C.E.O.'s problems.  I try to get the economy to research cool business ideas.</li>
-        </ul>
-    </div>
-    <div id="marketing-sales" class="tab-content">
-        <h2>Marketing & Sales</h2>
-        <ul>
-            <li><strong>Marketing Strategy:</strong> Guerilla Marketer, Guerilla Businessman, Scrappy Business Experimenter, Free Spirit doing odd jobs. Identities Mike Sorel, Jr./Juan Breakman-Hart/Deuce Humpton, and mass market appeal. To C.E.O.'s and General Population</li>
-            <li><strong>Sales Strategy:</strong> I guess I need to advertise them.  My 2 books.</li>
-            <li><strong>Pricing Strategy:</strong> I'm a consultant that gets money from C.E.O's major corporations.  I also sell merch.  Affiliate links.</li>
-            <li><strong>Advertising and Promotion:</strong> Guerilla Marketing, drop links in forums.  Add Value.  Be unmistakeable.</li>
-            <li><strong>Sales Forecast:</strong> I charge high ticket prices to be a guest c.e.o.  I need to have my accountant figure this all out.</li>
-        </ul>
-    </div>
-    <div id="funding-request" class="tab-content">
-        <h2>Funding Request</h2>
-        <ul>
-            <li><strong>Funding Requirements:</strong> The amount of funding you need and how it will be used.  Cameras inside the trucks.  I make my assistants wear body cams and edit the video.  Hooklift Dump truck f450.  Crane truck with knuckleboom & hooklift.</li>
-            <li><strong>Future Funding:</strong> Lean startup.  Only the bare essentials.  Eventually buy a "base" a house with business purpose  Maybe best to invest in a commercial business office so i can have room for employees and parking large trucks.  Commercial office space is going down might be able to snatch up a good deal.  The business will feature me doing business ideas to generate monies.  Like a test marketer.  A marketer running tests.  A Pilot business.</li>
-            <li><strong>Funding Strategy:</strong> Use vocational rehabilitation's guidance, crowdfunding for the truck.  Partnering with truck manufacturers.</li>
-        </ul>
-    </div>
-    <div id="financial-projections" class="tab-content">
-        <h2>Financial Projections</h2>
-        <ul>
-            <li><strong>Income Statement:</strong> 1,000 true fans.  1,000 true fans sell $20 products.  $20,000, 10,000 true fans $200,000.</li>
-            <li><strong>Cash Flow Statement:</strong> Low budget Vlogger, Brand Deals, Merch, Information Products, Reality Work Contracts, guest appearances.</li>
-            <li><strong>Balance Sheet:</strong> All money in, no money out.</li>
-            <li><strong>Break-Even Analysis:</strong> I want to keep the main costs the trucks and insurance.</li>
-            <li><strong>Financial Assumptions:</strong> The assumptions behind your financial projections.</li>
-        </ul>
-    </div>
-    <div id="appendix" class="tab-content">
-        <h2>Appendix</h2>
-        <ul>
-            <li><strong>Supporting Documents:</strong> Any additional documents that support your business plan, such as resumes, legal agreements, and product images.</li>
-            <li><strong>References:</strong> Any references or citations used in your business plan.</li>
-        </ul>
-    </div>
-
-    <script>
-        function showTab(tabId) {
-            var tabs = document.getElementsByClassName('tab-content');
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('active');
-            }
-            document.getElementById(tabId).classList.add('active');
-        }
-    </script>
-
+    <header>
+        <h1>HAPPY HOMES</h1>
+        <p>Real Estate and Junk Hauling Services</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <button>Hire me</button>
+        </div>
+      </div>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide a unique combination of real estate expertise and practical junk hauling services. Our mission is to streamline the selling process by offering free junk hauling to our real estate clients, helping them prepare their homes for sale with ease.</p>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Real Estate Services:</strong> Helping homeowners sell faster with expert staging, pricing, and marketing.</li>
+                <li><strong>Complimentary Junk Hauling:</strong> Free junk removal for real estate clients to prepare homes for sale.</li>
+                <li><strong>Insurance Services:</strong> Comprehensive insurance solutions for homeowners.</li>
+                <li><strong>Additional Hauling Services:</strong> Paid junk removal, debris hauling, and tree trimming for non-real estate clients.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Sell Your Home?</h2>
+        <p>Let us handle the cleanup! Contact us today for expert real estate services and complimentary junk hauling.</p>
+        <a href="#contact">Contact Us</a>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Phone: <a href="tel:[Your Phone Number]">[Your Phone Number]</a></p>
+            <p>Email: <a href="mailto:[Your Email Address]">[Your Email Address]</a></p>
+            <p>Service Area: [Your Location/Region]</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Business Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
